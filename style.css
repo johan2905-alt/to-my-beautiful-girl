@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #ffeef6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  animation: breathe 4s infinite;
+}
+
+@keyframes breathe {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+h1 {
+  color: #ff4d88;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+button {
+  background: #ff4d88;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.hug-btn {
+  background: #ff8fab;
+}
+
+.emoji {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ANIMASI HATI */
+.float {
+  position: absolute;
+  font-size: 28px;
+  animation: floatUp 3s linear forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+
+/* efek peluk */
+.hugged {
+  animation: hugShake 0.6s;
+}
+
+@keyframes hugShake {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  75% { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
